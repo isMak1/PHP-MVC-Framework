@@ -8,10 +8,11 @@ Trait Model
 {
     use Database;
     
-    protected $limit = 10;
-    protected $offset = 0;
-    protected $order_type = "desc";
+    protected $limit        = 10;
+    protected $offset       = 0;
+    protected $order_type   = "desc";
     protected $order_column = "id";
+    public $errors          = [];
 
 
     public function findAll(){
@@ -72,7 +73,7 @@ Trait Model
     {
 
         /** Remove unwanted columns */
-        if(!empty($this->allowed_columns))
+        if(!empty($this->allowedColumns))
         {
             foreach($data as $key => $value) {
                 if(!in_array($key, $this->allowedColumns))

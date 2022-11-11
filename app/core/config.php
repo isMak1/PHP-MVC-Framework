@@ -10,7 +10,7 @@ if($_SERVER['SERVER_NAME'] == 'localhost')
     /** for postgresql you can also add */
     define('DBDRIVER', '');
     
-    define('ROOT', 'http://localhost/mvc/public');
+    define('ROOT', 'http://localhost/testmvc/public');
 }
 
 else
