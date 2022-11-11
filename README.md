@@ -1,2 +1,3 @@
 # PHP-MVC-Framework
-A simple presentation of a framework built from the ground up using OOP PHP MVC
+A simple presentation of a framework built from the ground up using OOP PHP MVC With Login and signup. 
+
