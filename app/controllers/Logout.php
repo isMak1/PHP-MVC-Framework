@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Logout class
- */
-
 class Logout 
 {
     use Controller;

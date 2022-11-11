@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Login class
- */
-
 class Login 
 {
     use Controller;
@@ -13,9 +9,9 @@ class Login
 
         $data = [];
         
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            $user = new User();
+        if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
+            $user = new User();
             $arr['email'] = $_POST['email'];    
             $row = $user->first($arr);
 

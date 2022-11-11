@@ -4,9 +4,9 @@ class _404
 {
     use Controller;
     
-    public function index($a = '', $b = '', $c = '')
+    public function index()
     {
-        echo "<h1>404 Page couldn't be found</h1>";
+        $this->view('404');
     }
 }
 

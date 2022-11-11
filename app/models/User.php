@@ -24,7 +24,7 @@ class User
         }else {
             if(!filter_var($data['email'], FILTER_VALIDATE_EMAIL))
             {
-                $this->errors['email'] = "Email format is not valid";
+                $this->errors['email'] = "Email is not valid";
             }
         }
 

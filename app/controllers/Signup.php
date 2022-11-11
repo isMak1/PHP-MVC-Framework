@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Signup class
- */
-
 class Signup 
 {
     use Controller;

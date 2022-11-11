@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Controller trait
- */
-
 trait Controller
 {
     public function view($name, $data = [])
@@ -13,11 +9,7 @@ trait Controller
 
         $filename = "../app/views/".$name.".view.php";
         
-        if (file_exists($filename)) {
-            require $filename;
-        } else {
-            $filename = "../app/views/404.view.php";
-            require $filename;
-        }
+        file_exists($filename) ? require $filename : require "../app/views/404.view.php";
+
     }
 }
